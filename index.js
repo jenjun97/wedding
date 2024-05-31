@@ -1,3 +1,11 @@
+// 动态加载Google表单
+document.addEventListener('DOMContentLoaded', function() {
+    const replyContent = document.getElementById('replyContent');
+    if (replyContent) {
+        replyContent.innerHTML = `<iframe id="replyIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdr9AIolvSGjuirBEnJwxHwNWugL1965m8f1Y760y4Uwq5zfQ/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">載入中…</iframe>`;
+    }
+});
+
 // 動態調整iframe高度
 window.addEventListener('message', function(event) {
     if (event.data.type === 'setHeight') {
@@ -12,6 +20,7 @@ window.addEventListener('message', function(event) {
         }
     }
 });
+
 // 現有的JavaScript代碼...
 
 /**
@@ -50,7 +59,7 @@ function toggleSection(sectionId) {
     });
 }
 
-// 動態加載reminder.html內容
+// 动态加載reminder.html內容
 document.addEventListener('DOMContentLoaded', function() {
     const reminderContent = document.getElementById('reminderContent');
     if (reminderContent) {
