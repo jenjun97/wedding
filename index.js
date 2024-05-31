@@ -1,3 +1,17 @@
+// 動態調整iframe高度
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'setHeight') {
+        const iframe = document.getElementById('infoIframe');
+        if (iframe) {
+            iframe.style.height = event.data.height + 'px';
+        }
+    } else if (event.data.type === 'setHeightReply') {
+        const section = document.getElementById('replyIframe');
+        if (section) {
+            section.style.height = event.data.height + 'px';
+        }
+    }
+});
 // 現有的JavaScript代碼...
 
 /**
@@ -35,21 +49,6 @@ function toggleSection(sectionId) {
         }
     });
 }
-
-// 动态调整iframe高度
-window.addEventListener('message', function(event) {
-    if (event.data.type === 'setHeight') {
-        const iframe = document.getElementById('infoIframe');
-        if (iframe) {
-            iframe.style.height = event.data.height + 'px';
-        }
-    } else if (event.data.type === 'setHeightReply') {
-        const section = document.getElementById('reply');
-        if (section) {
-            section.style.height = event.data.height + 'px';
-        }
-    }
-});
 
 // 動態加載reminder.html內容
 document.addEventListener('DOMContentLoaded', function() {
