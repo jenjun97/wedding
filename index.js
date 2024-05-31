@@ -13,6 +13,7 @@ function toggleSection(sectionId) {
         'map',
         'reminder',
         'share',
+        'mytest',
         'guest-album'
     ];
 
