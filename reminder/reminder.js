@@ -1,13 +1,15 @@
-<div class="reminder-wrapper">
-    <!-- Google提醒按鈕 -->
-    <button type="button" class="btn btn-outline-success"
-        onclick="window.location.href='https://www.addevent.com/event/xY21860587+google'">
-        Google提醒
-    </button>
+// reminder.js
 
-    <!-- iPhone提醒按鈕 -->
-    <button type="button" class="btn btn-outline-info"
-        onclick="window.location.href='https://www.addevent.com/event/xY21860587+apple'">
-        iPhone提醒
-    </button>
-</div>
+document.addEventListener('DOMContentLoaded', function() {
+    const reminderContent = document.getElementById('reminderContent');
+    if (reminderContent) {
+        fetch('reminder/reminder.html')
+            .then(response => response.text())
+            .then(data => {
+                reminderContent.innerHTML = data;
+            })
+            .catch(error => console.error('Error loading reminder.html:', error));
+    }
+});
+
+// reminder.js其他代碼...
