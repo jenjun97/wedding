@@ -2,12 +2,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var iframe = document.getElementById('replyIframe');
 
     iframe.onload = function() {
-        var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        var interval = setInterval(function() {
+            var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            var iframeHeight = iframeDocument.body.scrollHeight;
 
-        // 等待iframe內容完全加載
-        iframeDocument.addEventListener('readystatechange', function() {
-            if (iframeDocument.readyState === 'complete') {
-                var iframeHeight = iframeDocument.body.scrollHeight;
+            if (iframeHeight > 0) {
                 var adjustedHeight = iframeHeight * 1.15;
                 iframe.style.height = adjustedHeight + 'px';
 
@@ -18,6 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, '*');
                 console.log(adjustedHeight);
             }
-        });
+        }, 1000); // 每秒重新計算高度
     };
 });
