@@ -1,11 +1,17 @@
+.lxgw-wenkai-tc-light {
+  font-family: "LXGW WenKai TC", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .lxgw-wenkai-tc-regular {
   font-family: "LXGW WenKai TC", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-h2{
-	  font-family: "LXGW WenKai TC", cursive;
-  font-weight: 400;
+.lxgw-wenkai-tc-bold {
+  font-family: "LXGW WenKai TC", cursive;
+  font-weight: 700;
   font-style: normal;
 }
