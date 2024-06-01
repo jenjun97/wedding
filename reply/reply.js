@@ -2,13 +2,15 @@ document.addEventListener("DOMContentLoaded", function() {
     var iframe = document.getElementById('replyIframe');
 
     iframe.onload = function() {
-        var interval = setInterval(function() {
+        var previousHeight = 0;
+        setInterval(function() {
             var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
             var iframeHeight = iframeDocument.body.scrollHeight;
 
-            if (iframeHeight > 0) {
+            if (iframeHeight !== previousHeight && iframeHeight > 0) {
                 var adjustedHeight = iframeHeight * 1.15;
                 iframe.style.height = adjustedHeight + 'px';
+                previousHeight = iframeHeight;
 
                 // 向父頁面發送高度訊息
                 window.parent.postMessage({
