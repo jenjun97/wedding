@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var iframe = document.getElementById('replyIframe');
 
     iframe.onload = function() {
-        var interval = setInterval(function() {
+        var checkHeight = function() {
             var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
             var body = iframeDocument.body;
             var html = iframeDocument.documentElement;
@@ -21,7 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     height: adjustedHeight
                 }, '*');
                 console.log(adjustedHeight);
+            } else {
+                // 如果高度为0，继续检查
+                setTimeout(checkHeight, 100);
             }
-        }, 1000); // 每秒重新計算高度
+        };
+
+        // 初始检查高度
+        checkHeight();
     };
 });

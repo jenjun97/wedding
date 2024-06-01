@@ -5,6 +5,11 @@ window.addEventListener('message', function(event) {
         if (iframe) {
             iframe.style.height = event.data.height + 'px';
         }
+    } else if (event.data.type === 'setHeightReply') {
+        const replyDiv = document.getElementById('reply');
+        if (replyDiv) {
+            replyDiv.style.height = event.data.height + 'px';
+        }
     }
 });
 
