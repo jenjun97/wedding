@@ -6,9 +6,9 @@ window.addEventListener('message', function(event) {
             iframe.style.height = event.data.height + 'px';
         }
     } else if (event.data.type === 'setHeightReply') {
-        const section = document.getElementById('replyIframe');
-        if (section) {
-            section.style.height = event.data.height + 'px';
+        const replyIframe = document.getElementById('replyIframe');
+        if (replyIframe) {
+            replyIframe.style.height = event.data.height + 'px';
         }
     }
 });
@@ -16,11 +16,11 @@ window.addEventListener('message', function(event) {
 // 現有的JavaScript代碼...
 
 /**
- * 切换指定区块的显示或隐藏，并关闭其他区块
- * @param {string} sectionId - 区块的ID
+ * 切換指定區塊的顯示或隱藏，並關閉其他區塊
+ * @param {string} sectionId - 區塊的ID
  */
 function toggleSection(sectionId) {
-    // 获取所有区块的ID
+    // 獲取所有區塊的ID
     const sections = [
         'info',
         'story',
@@ -37,14 +37,14 @@ function toggleSection(sectionId) {
         const section = document.getElementById(id);
         if (section) {
             if (id === sectionId) {
-                // 切换指定区块的显示状态
+                // 切換指定區塊的顯示狀態
                 if (section.style.display === "none" || section.style.display === "") {
                     section.style.display = "block";
                 } else {
                     section.style.display = "none";
                 }
             } else {
-                // 隐藏其他区块
+                // 隱藏其他區塊
                 section.style.display = "none";
             }
         }
