@@ -5,11 +5,6 @@ window.addEventListener('message', function(event) {
         if (iframe) {
             iframe.style.height = event.data.height + 'px';
         }
-    } else if (event.data.type === 'setHeightReply') {
-        const replyIframe = document.getElementById('replyIframe');
-        if (replyIframe) {
-            replyIframe.style.height = event.data.height + 'px';
-        }
     }
 });
 
