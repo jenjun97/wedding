@@ -51,13 +51,10 @@
 
 	<!-- 副標題 -->
 	<div class="content-wrapper">
-		<!--		<div class="text-center font-jasonhandwriting4" style="font-size: 10vw; color: rgb(255, 76, 82);">揪哩呷喜酒</div>-->
-		<div class="text-center font-jasonhandwriting4" style="font-size: 10vw; color: #DD8EA4;">揪哩呷喜酒</div>
-		<div class="text-center lxgw-wenkai-tc-regular" style="font-size: 8vw;">－2024.10.19－</div>
+		<div class="text-center sub-title-1 font-jasonhandwriting4">揪哩呷喜酒</div>
+		<div class="text-center sub-title-2 lxgw-wenkai-tc-regular">－2024.10.19－</div>
 	</div>
-<!--	<br>-->
-
-
+	<br>
 	<!-- 舊按鈕 喜宴資訊 -->
 	<!--	<div class="my-2 content-wrapper">-->
 	<!--		<button class="btn w-100 button-54" onclick="toggleSection('info')" style="color: rgb(255, 76, 82);">喜宴資訊</button>-->
@@ -69,7 +66,13 @@
 				<span class="button__text lxgw-wenkai-tc-bold">喜宴資訊</span>
 			</div>
 			<div class="characterBox">
+				<div class="character wakeup" style="display: none;">
+					<div class="character__face"></div>
+				</div>
 				<div class="character wakeup">
+					<div class="character__face"></div>
+				</div>
+				<div class="character wakeup" style="display: none;">
 					<div class="character__face"></div>
 				</div>
 			</div>
@@ -80,18 +83,28 @@
 		<iframe id="infoIframe" src="info/info.html" width="100%" frameborder="0"></iframe>
 	</div>
 
-	<!-- 舊按鈕-婚宴回函 -->
+	<!-- 舊按鈕 婚宴回函 -->
 	<!--	<div class="my-2 content-wrapper">-->
 	<!--		<button class="btn btn-primary w-100" onclick="toggleSection('reply')">婚宴回函</button>-->
 	<!--	</div>-->
-	<!-- 鳥按鈕-婚宴回函 -->
+	<!-- 鳥按鈕 婚宴回函 -->
 	<div class="my-2 content-wrapper d-flex justify-content-center align-items-center">
 		<button class="button w-70 button--hoo" onclick="toggleSection('reply')">
 			<div class="button__wrapper">
 				<span class="button__text lxgw-wenkai-tc-bold">婚宴回函</span>
 			</div>
 			<div class="characterBox">
+				<div class="character wakeup" style="display: none;">
+					<div class="character__face"></div>
+					<div class="charactor__face2"></div>
+					<div class="charactor__body"></div>
+				</div>
 				<div class="character wakeup">
+					<div class="character__face"></div>
+					<div class="charactor__face2"></div>
+					<div class="charactor__body"></div>
+				</div>
+				<div class="character" style="display: none;">
 					<div class="character__face"></div>
 					<div class="charactor__face2"></div>
 					<div class="charactor__body"></div>
@@ -99,13 +112,16 @@
 			</div>
 		</button>
 	</div>
-	
+
 	<!-- 引入reply.html -->
-		<div id="reply" class="content-section content-wrapper">
-			<iframe
-				src="https://docs.google.com/forms/d/e/1FAIpQLSdr9AIolvSGjuirBEnJwxHwNWugL1965m8f1Y760y4Uwq5zfQ/viewform?embedded=true"
-				width="100%" height="2096" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
-		</div>
+	<div id="reply" class="content-section content-wrapper">
+		<!--		<iframe-->
+		<!--			src="https://docs.google.com/forms/d/e/1FAIpQLSdr9AIolvSGjuirBEnJwxHwNWugL1965m8f1Y760y4Uwq5zfQ/viewform?embedded=true"-->
+		<!--			width="640" height="2096" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>-->
+		<iframe
+			src="https://docs.google.com/forms/d/e/1FAIpQLSdr9AIolvSGjuirBEnJwxHwNWugL1965m8f1Y760y4Uwq5zfQ/viewform?embedded=true"
+			width="100%" height="2185" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+	</div>
 
 
 	<!-- 舊按鈕 婚宴地圖 -->
@@ -119,7 +135,15 @@
 				<span class="button__text lxgw-wenkai-tc-bold">婚宴地圖</span>
 			</div>
 			<div class="characterBox">
+				<div class="character wakeup" style="display: none;">
+					<div class="character__face"></div>
+					<div class="charactor__face2"></div>
+				</div>
 				<div class="character wakeup">
+					<div class="character__face"></div>
+					<div class="charactor__face2"></div>
+				</div>
+				<div class="character" style="display: none;">
 					<div class="character__face"></div>
 					<div class="charactor__face2"></div>
 				</div>
@@ -136,29 +160,50 @@
 		</div>
 	</div>
 
-	<!-- 喜宴提醒 -->
-	<div class="my-2 content-wrapper">
-		<button class="btn btn-primary w-100" onclick="toggleSection('reminder')">喜宴提醒</button>
+	<!--舊按鈕 喜宴提醒 -->
+	<!--	<div class="my-2 content-wrapper">-->
+	<!--		<button class="btn btn-primary w-100" onclick="toggleSection('reminder')">喜宴提醒</button>-->
+	<!--	</div>-->
+	<!-- 鳥按鈕 喜宴提醒 -->
+	<div class="my-2 content-wrapper d-flex justify-content-center align-items-center"
+		onclick="toggleSection('reminder')">
+		<button class="button w-70 button--piyo" onclick="toggleSection('info')">
+			<div class="button__wrapper">
+				<span class="button__text lxgw-wenkai-tc-bold">喜宴提醒</span>
+			</div>
+			<div class="characterBox">
+				<div class="character wakeup" style="display: none;">
+					<div class="character__face"></div>
+				</div>
+				<div class="character wakeup">
+					<div class="character__face"></div>
+				</div>
+				<div class="character wakeup" style="display: none;">
+					<div class="character__face"></div>
+				</div>
+			</div>
+		</button>
 	</div>
 	<div id="reminder" class="content-section content-wrapper">
 		<div id="reminderContent"></div>
 		<iframe id="reminererIframe" src="reminder/reminder.html" width="100%" frameborder="0"></iframe>
 	</div>
 
-	<!-- 喜訊分享 -->
-	<div class="my-2 content-wrapper">
-		<button class="btn btn-primary w-100" onclick="toggleSection('share')">喜訊分享</button>
-	</div>
-	<div id="share" class="content-section content-wrapper">
-		<div id="share-content"></div>
-	</div>
+	<!-- 舊按鈕 喜訊分享 -->
+	<!--	<div class="my-2 content-wrapper">-->
+	<!--		<button class="btn btn-primary w-100" onclick="toggleSection('share')">喜訊分享</button>-->
+	<!--	</div>-->
+	<!--	<div id="share" class="content-section content-wrapper">-->
+	<!--		<div id="share-content"></div>-->
+	<!--	</div>-->
 
-<!--	<div class="my-2 content-wrapper">-->
-<!--		<button class="btn btn-primary w-100" onclick="toggleSection('guest-album')">賓客相簿</button>-->
-<!--	</div>-->
-<!--	<div id="guest-album" class="content-section content-wrapper">-->
-<!--		<div id="guest-album-content"></div>-->
-<!--	</div>-->
+	<!-- 賓客相簿 -->
+	<!--	<div class="my-2 content-wrapper">-->
+	<!--		<button class="btn btn-primary w-100" onclick="toggleSection('guest-album')">賓客相簿</button>-->
+	<!--	</div>-->
+	<!--	<div id="guest-album" class="content-section content-wrapper">-->
+	<!--		<div id="guest-album-content"></div>-->
+	<!--	</div>-->
 
 </body>
 
