@@ -1,17 +1,20 @@
-/* index.css */
+/* 設定body背景色 */
 body.index-body {
-	background-color: #F2E9EB;
+	background-color: #F4D9B3;
 }
 
+/* 設定副標題1的字體大小和顏色 */
 .index-sub-title-1 {
-    font-size: 12vw;
-    color: #DD8EA4;
+	font-size: 12vw;
+	color: #DD8EA4;
 }
 
+/* 設定副標題2的字體大小 */
 .index-sub-title-2 {
-    font-size: 8vw;
+	font-size: 8vw;
 }
 
+/* 設定內容區塊的顯示樣式 */
 .index-content-section {
 	display: none;
 	padding: 15px;
@@ -24,6 +27,7 @@ body.index-body {
 	margin: 0 auto;
 }
 
+/* 設定內容包裝區塊的樣式 */
 .index-content-wrapper {
 	width: 100%;
 	max-width: 430px;
@@ -32,18 +36,22 @@ body.index-body {
 	text-align: center;
 }
 
+/* 小於380px螢幕寬度時的樣式 */
 @media (max-width: 380px) {
+
 	.index-content-wrapper,
 	.index-content-section {
 		max-width: 100%;
 	}
 }
 
+/* 大於430px螢幕寬度時的樣式 */
 @media (min-width: 430px) {
-    .index-sub-title-1 {
-        font-size: 51.6px;
-    }
-    .index-sub-title-2 {
-        font-size: 34.4px;
-    }
+	.index-sub-title-1 {
+		font-size: 51.6px;
+	}
+
+	.index-sub-title-2 {
+		font-size: 34.4px;
+	}
 }

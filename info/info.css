@@ -1,4 +1,4 @@
-/* info.css */
+/* 設定body元素的字型、背景顏色、外距和內距 */
 body.info-body {
 	font-family: 'Arial', sans-serif;
 	background-color: #f4f4f9;
@@ -6,6 +6,7 @@ body.info-body {
 	padding: 0;
 }
 
+/* 設定主要內容容器的寬度、外距、內距、背景顏色、陰影和圓角 */
 .info-container {
 	max-width: 800px;
 	margin: 20px auto;
@@ -15,6 +16,7 @@ body.info-body {
 	border-radius: 8px;
 }
 
+/* 設定內容區塊的內距、邊框、背景顏色、圓角和陰影 */
 .info-content-section {
 	padding: 20px;
 	border: 1px solid #ccc;
@@ -23,6 +25,7 @@ body.info-body {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+/* 設定標題的字型大小、顏色、對齊方式和底部外距 */
 .info-title {
 	font-size: 24px;
 	color: #333;
@@ -30,6 +33,7 @@ body.info-body {
 	margin-bottom: 20px;
 }
 
+/* 設定故事段落的字型大小、行高、顏色和底部外距 */
 .info-story {
 	font-size: 18px;
 	line-height: 1.6;
@@ -37,6 +41,7 @@ body.info-body {
 	margin-bottom: 10px;
 }
 
+/* 設定結論段落的字型大小、行高、顏色、對齊方式、頂部外距和字型加粗 */
 .info-conclusion {
 	font-size: 18px;
 	line-height: 1.6;

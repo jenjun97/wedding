@@ -1,5 +1,7 @@
+// 當DOM內容加載完成後執行
 document.addEventListener("DOMContentLoaded", function() {
-    var slideshowContent = `
+	// 定義輪播的HTML內容
+	var slideshowContent = `
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -27,11 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
             </button>
         </div>
     `;
-    document.getElementById("slideshow-content").innerHTML = slideshowContent;
+	// 將輪播內容插入到ID為slideshow-content的元素中
+	document.getElementById("slideshow-content").innerHTML = slideshowContent;
 
-    var myCarousel = document.querySelector('#carouselExampleIndicators');
-    var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 3000,
-        ride: 'carousel'
-    });
+	// 獲取輪播控件的元素
+	var myCarousel = document.querySelector('#carouselExampleIndicators');
+	// 初始化Bootstrap的輪播控件
+	var carousel = new bootstrap.Carousel(myCarousel, {
+		interval: 3000, // 每3秒切換一次
+		ride: 'carousel'
+	});
 });
