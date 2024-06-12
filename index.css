@@ -94,10 +94,10 @@ body.index-body {
 	height: auto;
 }
 
-/* 當視窗寬度超過 430px 時，圖片不再縮放 */
+/* 當視窗寬度超過時，圖片不再縮放 */
 @media (min-width: 131px) {
 	.responsive-logo {
-		/* 設定圖片的最大寬度為 430px */
+		/* 設定圖片的最大寬度 */
 		max-width: 131px;
 	}
 }
