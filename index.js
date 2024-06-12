@@ -32,3 +32,23 @@ function toggleSection(sectionId) {
 	});
 }
 
+/**
+ * 用戶代理檢測和iframe加載
+ */
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+window.onload = function() {
+    var iframe = document.createElement('iframe');
+    iframe.width = "100%";
+    iframe.height = "2167";
+    iframe.frameBorder = "0";
+    iframe.marginHeight = "0";
+    iframe.marginWidth = "0";
+    iframe.src = "https://docs.google.com/forms/d/e/1FAIpQLSdr9AIolvSGjuirBEnJwxHwNWugL1965m8f1Y760y4Uwq5zfQ/viewform?embedded=true";
+
+    // 直接加載iframe而不提示
+    document.getElementById('reply').appendChild(iframe);
+}
+
