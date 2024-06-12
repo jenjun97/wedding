@@ -58,21 +58,46 @@ body.index-body {
 
 /* 修改 info 的樣式，使其背景顏色變為透明 */
 #index-content-section.info {
-    background-color: transparent; /* 設定背景顏色為透明 */
+	background-color: transparent;
+	/* 設定背景顏色為透明 */
 }
 
 /* 調整 info 內部文字的大小，使其根據視窗大小調整 */
 .info-content-section {
-    font-size: 2vw; /* 根據視窗寬度調整文字大小 */
-    max-width: 430px; /* 最大寬度為430px */
-    margin: 0 auto; /* 水平居中 */
-    padding: 20px; /* 內邊距 */
-    box-sizing: border-box; /* 包含內邊距和邊框在內的計算 */
+	font-size: 2vw;
+	/* 根據視窗寬度調整文字大小 */
+	max-width: 430px;
+	/* 最大寬度為430px */
+	margin: 0 auto;
+	/* 水平居中 */
+	padding: 20px;
+	/* 內邊距 */
+	box-sizing: border-box;
+	/* 包含內邊距和邊框在內的計算 */
 }
 
 /* 確保 info 內部文字的最大寬度不超過430px */
 @media (min-width: 430px) {
-    .info-content-section {
-        font-size: 1.6vw; /* 當視窗寬度大於430px時，設置固定字體大小 */
-    }
+	.info-content-section {
+		font-size: 1.6vw;
+		/* 當視窗寬度大於430px時，設置固定字體大小 */
+	}
+}
+
+/* 設定圖片 logo 的樣式 */
+.responsive-logo {
+	/* 置中圖片 */
+	display: block;
+	margin:  auto;
+	/* 設定圖片的最大寬度 */
+	max-width: 30%;
+	height: auto;
+}
+
+/* 當視窗寬度超過 430px 時，圖片不再縮放 */
+@media (min-width: 131px) {
+	.responsive-logo {
+		/* 設定圖片的最大寬度為 430px */
+		max-width: 131px;
+	}
 }
