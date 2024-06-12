@@ -8,14 +8,9 @@ function toggleSection(sectionId) {
 	// 獲取所有區塊的ID
 	const sections = [
 		'info',
-		'story',
-		'aboutus',
-		'wedding-album',
 		'reply',
 		'map',
-		'reminder',
-		'share',
-		'guest-album'
+		'reminder'
 	];
 
 	sections.forEach(id => {

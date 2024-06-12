@@ -20,9 +20,10 @@ body.info-body {
 .info-content-section {
 	padding: 20px;
 	border: 1px solid #ccc;
-	/*	background-color: #fff;*/
+/*	background-color: #fff;*/
+	background-color: #FCF8F2;
 	/* 設定背景顏色為透明 */
-	background-color: transparent;
+/*		background-color: transparent;*/
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }

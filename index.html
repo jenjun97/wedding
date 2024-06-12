@@ -62,7 +62,7 @@
 		</button>
 	</div>
 	<!-- 資訊內容 -->
-	<div id="info" class="index-content-section index-content-wrapper">
+	<div id="info" class="index-content-section index-content-wrapper" style="background-color: transparent;">
 		<div class="info-container">
 			<div class="info-content-section">
 				<h3 class="info-conclusion">新人</h3>
@@ -152,9 +152,8 @@
 	</div>
 
 	<!-- 提醒按鈕 -->
-	<div class="my-2 index-content-wrapper d-flex justify-content-center align-items-center"
-		onclick="toggleSection('reminder')">
-		<button class="button w-70 button--piyo" onclick="toggleSection('info')">
+	<div class="my-2 index-content-wrapper d-flex justify-content-center align-items-center">
+		<button class="button w-70 button--piyo" onclick="toggleSection('reminder')">
 			<div class="button__wrapper">
 				<span class="button__text fonts-lxgw-wenkai-tc-bold">婚宴提醒</span>
 			</div>
@@ -172,9 +171,17 @@
 		</button>
 	</div>
 	<!-- 提醒內容 -->
-	<div id="reminder" class="index-content-section index-content-wrapper">
+	<div id="reminder" class="index-content-section index-content-wrapper" style="background-color: #FCF8F2;">
 		<div id="reminderContent"></div>
-		<iframe id="reminererIframe" src="reminder/reminder.html" width="100%" frameborder="0"></iframe>
+		<!--		<iframe id="reminererIframe" src="reminder/reminder.html" width="100%" frameborder="0"></iframe>-->
+		<div class="reminder-wrapper">
+			<!-- Google提醒按鈕 -->
+			<button type="button" class="btn btn-primary"
+				onclick="window.location.href='https://www.addevent.com/event/xY21860587+google'">加入Google行事曆提醒</button>
+			<!-- iPhone提醒按鈕 -->
+			<button type="button" class="btn btn-success"
+				onclick="window.location.href='https://www.addevent.com/event/xY21860587+apple'">加入iPhone行事曆提醒</button>
+		</div>
 	</div>
 </body>
 
