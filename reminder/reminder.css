@@ -8,12 +8,12 @@
 	align-items: center;
 	/* 按鈕之間的間距 */
 	gap: 10px;
-/*	margin-top: 20px;*/
+	/*	margin-top: 20px;*/
 
-/*	border: 1px solid #ccc;*/
-/*	background-color: #fff;*/
-/*	padding: 20px;*/
-/*	border-radius: 8px;*/
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	padding: 10px;
+	border-radius: 8px;
 }
 
 /* 設置按鈕的樣式 */
