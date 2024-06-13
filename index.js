@@ -9,8 +9,7 @@ function toggleSection(sectionId) {
 	const sections = [
 		'info',
 		'reply',
-		'map',
-		'reminder'
+		'map'
 	];
 
 	sections.forEach(id => {
