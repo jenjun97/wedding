@@ -1,11 +1,13 @@
 /* 設定body背景色 */
 body.index-body {
-	background-color: #F4D9B3;
+/*	background-color: #F4D9B3;*/
+	background-color: #F2E9EB;
 }
 
 /* 設定副標題1的字體大小和顏色 */
 .index-sub-title-1 {
 	font-size: 12vw;
+/*	color: #DD8EA4;*/
 	color: #DD8EA4;
 }
 
