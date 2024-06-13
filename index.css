@@ -92,14 +92,14 @@ body.index-body {
 	display: block;
 	margin:  auto;
 	/* 設定圖片的最大寬度 */
-	max-width: 30%;
+	max-width: 15%;
 	height: auto;
 }
 
 /* 當視窗寬度超過時，圖片不再縮放 */
-@media (min-width: 131px) {
+@media (min-width: 65px) {
 	.responsive-logo {
 		/* 設定圖片的最大寬度 */
-		max-width: 131px;
+		max-width: 65px;
 	}
 }
