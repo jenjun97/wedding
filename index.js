@@ -1,27 +1,33 @@
 
-/**
- * 切換指定區塊的顯示或隱藏，並關閉其他區塊
- * @param {string} sectionId - 區塊的ID
- */
 // 切換指定區塊的顯示或隱藏，並關閉其他區塊
 function toggleSection(sectionId) {
-	// 獲取所有區塊的ID
-	const sections = [
-		'info',
-		'reply',
-		'map'
-	];
+	// 定義所有區塊的ID
+	const sections = ['info', 'reply', 'map'];
 
+	// 獲取要切換的區塊
+	let sectionToToggle = document.getElementById(sectionId);
+	// 判斷該區塊是否顯示
+	let isSectionVisible = sectionToToggle.style.display === "block";
+	// 用於標識是否再次點擊同一區塊
+	let isSameSectionClicked = false;
+
+	// 遍歷所有區塊的ID
 	sections.forEach(id => {
+		// 獲取區塊的元素
 		const section = document.getElementById(id);
 		if (section) {
 			if (id === sectionId) {
+				// 如果是要切換的區塊
 				if (section.style.display === "none" || section.style.display === "") {
-					// 顯示指定區塊
+					// 如果區塊目前是隱藏的，顯示該區塊
 					section.style.display = "block";
+					// 滾動到該區塊
+					section.scrollIntoView({ behavior: "smooth" });
 				} else {
-					// 隱藏指定區塊
+					// 如果區塊目前是顯示的，隱藏該區塊
 					section.style.display = "none";
+					// 標記為再次點擊同一區塊
+					isSameSectionClicked = true;
 				}
 			} else {
 				// 隱藏其他區塊
@@ -29,6 +35,11 @@ function toggleSection(sectionId) {
 			}
 		}
 	});
+
+	// 如果是隱藏同一區塊，滾動到頁面頂端
+	if (isSameSectionClicked) {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
 }
 
 /**
